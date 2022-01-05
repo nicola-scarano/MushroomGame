@@ -16,9 +16,15 @@ class Mush:
 
 
 
+    def drawSadMush(self):
+        sadMush = pygame.image.load("resources/indir.jfif").convert()
+        self.parent_screen.blit(sadMush, (150, 250))
+
+        pygame.display.flip()
 
 
     def draw(self):
+
 
 
         self.parent_screen.blit(self.mush, (self.mush_x, self.mush_y))
@@ -26,14 +32,20 @@ class Mush:
         pygame.display.flip()
 
 
-        self.mush_x =  randrange(0,1000,12)
-        self.mush_y = randrange(0,700,12)
+        self.mush_x =  randrange(0,600,12)
+        self.mush_y = randrange(150,580,12)
 
 
 class Game:
     def __init__(self):
+        #icon-logo
+        pygame.display.set_caption("MushGame")
+        icon = pygame.image.load('resources/mush-logo.png')
+        pygame.display.set_icon(icon)
+
+
         pygame.init()
-        self.surface = pygame.display.set_mode((1000, 700))
+        self.surface = pygame.display.set_mode((1100, 700))
         self.surface.fill((125, 173, 250))  # rgb color
         pygame.display.flip()
 
@@ -53,11 +65,14 @@ class Game:
         val = 0
         count = 1
 
-        while (count < 10):
+        score = 1
+
+        while (count < 5):
 
             count = count + 1
             abort_after = 2.0 #5 sec
             start = time.time()
+
 
             while True:
 
@@ -74,10 +89,32 @@ class Game:
                     break
 
             print("session " + str(count) + " session is over****")
-            if (val < 500):
+            if (val < 50):
+
+
+
+                myfont = pygame.font.SysFont("Goudy Stout", 28)
+
+
+
+                placeholder = myfont.render(" " + str(score-1), True, (125, 173, 250))
+                self.surface.blit(placeholder, (1009, 0))
+                placeholder1 = myfont.render(" " + str(score-1), True, (125, 173, 250))
+                self.surface.blit(placeholder1, (1008, 0))
+                scoretext = myfont.render("# of Mush: " + str(score), True, (180, 240, 200))
+                self.surface.blit(scoretext, (720, 0))
                 self.mush.draw()
+                score = score + 1
+
+
+
+
+
+
 
                 print("mush drawn")
+        if (score < 3):
+            self.mush.drawSadMush()
 
 
 
