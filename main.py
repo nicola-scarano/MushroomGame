@@ -8,20 +8,26 @@ from random import randrange
 
 class Mush:
 
-    def __init__(self, surface):
+    def __init__(self, surface, m_x, m_y):
+        self.mush_x = m_x
+        self.mush_y = m_y
         self.parent_screen = surface
         self.mush = pygame.image.load("resources/mush.png").convert()
-        self.mush_x = randrange(500)
-        self.mush_y = randrange(500)
+
 
 
 
 
     def draw(self):
+
+
         self.parent_screen.blit(self.mush, (self.mush_x, self.mush_y))
 
-
         pygame.display.flip()
+
+
+        self.mush_x =  randrange(0,1000,12)
+        self.mush_y = randrange(0,700,12)
 
 
 class Game:
@@ -31,7 +37,10 @@ class Game:
         self.surface.fill((125, 173, 250))  # rgb color
         pygame.display.flip()
 
-        self.mush = Mush(self.surface)
+        self.mush_x = 0
+        self.mush_y = 0
+
+        self.mush = Mush(self.surface, self.mush_x, self.mush_y)
 
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
@@ -44,10 +53,10 @@ class Game:
         val = 0
         count = 1
 
-        while (count < 3):
+        while (count < 10):
 
             count = count + 1
-            abort_after = 3.0
+            abort_after = 2.0 #5 sec
             start = time.time()
 
             while True:
@@ -59,15 +68,17 @@ class Game:
                 print("totVal:", val)
                 time.sleep(1)
 
-                if (val < 500):
-                    self.mush.draw()
-                    self.mush.draw()
 
 
                 if delta >= abort_after:
                     break
 
             print("session " + str(count) + " session is over****")
+            if (val < 500):
+                self.mush.draw()
+
+                print("mush drawn")
+
 
 
 
