@@ -14,9 +14,11 @@ class Mush:
         self.parent_screen = surface
 
         self.mush = pygame.image.load("resources/mush.png").convert_alpha()
+        self.sadMush = pygame.image.load(("resources/sadMush.png"))
 
         color = 125, 173, 250
         self.mush.set_colorkey(color)
+        self.sadMush.set_colorkey(color)
 
 
 
@@ -27,8 +29,7 @@ class Mush:
 
 
     def drawSadMush(self):
-        sadMush = pygame.image.load("resources/indir.jfif").convert()
-        self.parent_screen.blit(sadMush, (150, 250))
+        self.parent_screen.blit(self.sadMush, (150, 550))
         pygame.display.flip()
 
 
@@ -36,13 +37,9 @@ class Mush:
         # mush location display
         self.parent_screen.blit(self.mush, (self.mush_x, self.mush_y))
 
-
-
-
         pygame.display.flip()
 
-
-        self.mush_x =  randrange(200,900,15)
+        self.mush_x = randrange(200,900,15)
         self.mush_y = 565
 
 
@@ -81,7 +78,7 @@ class Game:
 
         score = 0
 
-        while (count < 20):
+        while (count < 8):
 
             count = count + 1
             abort_after = 2.0 #5 sec
@@ -119,7 +116,7 @@ class Game:
                 score = score + 1
 
                 print("mush drawn")
-        if (score < 3):
+        if (score < 5):
             self.mush.drawSadMush()
 
 
