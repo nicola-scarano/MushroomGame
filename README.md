@@ -37,3 +37,16 @@ If student could grow more than 5 mushrooms they are awarded with mushrooms many
 In this case students grow 13 mushrooms and they are awarded with 13 minutes break
 
 <img src="resources/1.png" ></img>
+
+
+### Mushrooms
+
+<img src="resources/redMush.jpg" >
+
+Mushrooms are grown since the measured total vloume during a session is not exceeded the treshold value.In this case:
+They keep appearing untill the end of the class 
+
+<img src="resources/3.png" >
+
+If the measured total volume during a session is exceeded the treshold value, mushrooms are stop appearing.
+
