@@ -34,5 +34,6 @@ If student could grow less than 5 mushrooms they are awarded 5 minutes break:
 2nd Case:
     
 If student could grow more than 5 mushrooms they are awarded with mushrooms many minutes break:
+In this case students grow 13 mushrooms and they are awarded with 13 minutes break
 
-<img src="resources/3.png" ></img>
+<img src="resources/1.png" ></img>
