@@ -50,3 +50,4 @@ They keep appearing untill the end of the class
 
 If the measured total volume during a session is exceeded the treshold value, mushrooms are stop appearing.
 
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=-tU486wmFCQ)
