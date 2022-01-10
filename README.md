@@ -15,17 +15,16 @@ Students are awarded with the breaktime :
   
   For game part pygame library is used.
   
-  ##  Game object's definition 
+##  Game object's definition 
   
-  ### Mage
-    <img src="resources/mage.jpg" ></img>
+### Mage
+<img src="resources/mage.jpg" ></img>
 
-    Mage comes at the end of the all sessions (at the end of the class) And she announces the awarded breaktime.
+Mage comes at the end of the all sessions (at the end of the class) And she announces the awarded breaktime.
     
-    If student could grow less than 5 mushrooms they are awarded 5 minutes break:
-    
-    <img src="resources2.png" ></img>
+If student could grow less than 5 mushrooms they are awarded 5 minutes break:
 
+<img src="resources/2.png" ></img>
 
 
 
