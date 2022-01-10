@@ -1,5 +1,5 @@
-# MushroomGame
-
+# Mus
+### Mushroom game for classroom environment to foster children's attention during the class time.
 
 <img src="resources/blueMush.jpg" ></img> <img src="resources/redMush.jpg" ></img> <img src="resources/purpleMush.jpg" ></img> 
 
@@ -13,9 +13,20 @@ Students are awarded with the breaktime :
   For volume measurement rcaudio (https://github.com/mhy12345/rcaudio) is used.
   
   For game part pygame library is used.
+  
+  ##  Game object's definition 
+  
+  ### Mage
+    <img src="resources/mage.jpg" ></img>
+
+    Mage comes at the end of the all sessions (at the end of the class) And she announces the awarded breaktime.
+    
+    If student could grow less than 5 mushrooms they are awarded 5 minutes break:
+    
+    <img src="resources/2.png" ></img>
 
 
 
-<img src="resources/2.jpg" ></img>
+
 
 <img src="resources/3.jpg" ></img>
