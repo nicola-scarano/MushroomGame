@@ -21,12 +21,18 @@ Students are awarded with the breaktime :
 <img src="resources/mage.jpg" ></img>
 
 Mage comes at the end of the all sessions (at the end of the class) And she announces the awarded breaktime.
+
+There are two cases:
+
+1st Case:
     
 If student could grow less than 5 mushrooms they are awarded 5 minutes break:
 
 <img src="resources/2.png" ></img>
 
 
+2nd Case:
+    
+If student could grow more than 5 mushrooms they are awarded with mushrooms many minutes break:
 
-
-<img src="resources/3.jpg" ></img>
+<img src="resources/3.png" ></img>
