@@ -13,12 +13,12 @@ class Mush:
         self.mush_y = m_y
         self.parent_screen = surface
 
-        self.mush = pygame.image.load("resources/mush.png").convert_alpha()
-        self.sadMush = pygame.image.load(("resources/sadMush.png"))
+        self.mush = pygame.image.load("resources/happiMush.png").convert_alpha()
+        self.mage = pygame.image.load(("resources/mage.jpg"))
 
         color = 125, 173, 250
         self.mush.set_colorkey(color)
-        self.sadMush.set_colorkey(color)
+        self.mage.set_colorkey(color)
 
 
 
@@ -28,8 +28,10 @@ class Mush:
 
 
 
-    def drawSadMush(self):
-        self.parent_screen.blit(self.sadMush, (150, 550))
+    def drawMage(self):
+        self.parent_screen.blit(self.mage, (20, 60))
+
+
         pygame.display.flip()
 
 
@@ -100,7 +102,7 @@ class Game:
                     break
 
             print("session " + str(count) + " session is over****")
-            if (val < 650):
+            if (val < 600):
 
                 myfont = pygame.font.SysFont("Goudy Stout", 28)
 
@@ -113,11 +115,27 @@ class Game:
                 self.surface.blit(scoretext, (720, 0))
                 self.mush.draw()
 
-                score = score + 1
+                self.score = score + 1
 
                 print("mush drawn")
         if (score < 5):
-            self.mush.drawSadMush()
+
+            myfont1 = pygame.font.SysFont("Broadway", 28)
+
+            limitedBreak = myfont1.render("You have  " + str(5) + "  mushroom many times for break",
+                                          True, (255, 255, 255))
+            self.surface.blit(limitedBreak, (350, 200))
+            self.mush.drawMage()
+        else:
+            myfont1 = pygame.font.SysFont("Broadway", 28)
+
+            limitedBreak = myfont1.render("You have  " + str(score) + "  mushroom many times for break",
+                                          True, (255, 255, 255))
+            self.surface.blit(limitedBreak, (350, 200))
+            self.mush.drawMage()
+
+
+
 
 
 
