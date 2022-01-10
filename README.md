@@ -1,4 +1,5 @@
-# Mus
+# Mush
+
 ### Mushroom game for classroom environment to foster children's attention during the class time.
 
 <img src="resources/blueMush.jpg" ></img> <img src="resources/redMush.jpg" ></img> <img src="resources/purpleMush.jpg" ></img> 
@@ -23,7 +24,7 @@ Students are awarded with the breaktime :
     
     If student could grow less than 5 mushrooms they are awarded 5 minutes break:
     
-    <img src="resources/2.png" ></img>
+    <img src="resources2.png" ></img>
 
 
 
