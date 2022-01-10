@@ -42,7 +42,7 @@ class Mush:
         pygame.display.flip()
 
         self.mush_x = randrange(200,900,15)
-        self.mush_y = 565
+        self.mush_y = randrange(500,650,15)
 
 
 class Game:
@@ -80,10 +80,10 @@ class Game:
 
         score = 0
 
-        while (count < 8):
+        while (count < 15):
 
             count = count + 1
-            abort_after = 2.0 #5 sec
+            abort_after = 3.0 #5 sec
             start = time.time()
 
 
@@ -102,7 +102,7 @@ class Game:
                     break
 
             print("session " + str(count) + " session is over****")
-            if (val < 600):
+            if (val < 1000):
 
                 myfont = pygame.font.SysFont("Goudy Stout", 28)
 
@@ -115,21 +115,22 @@ class Game:
                 self.surface.blit(scoretext, (720, 0))
                 self.mush.draw()
 
-                self.score = score + 1
+                score = score + 1
 
                 print("mush drawn")
+
         if (score < 5):
 
             myfont1 = pygame.font.SysFont("Broadway", 28)
 
-            limitedBreak = myfont1.render("You have  " + str(5) + "  mushroom many times for break",
+            limitedBreak = myfont1.render("You have  " + str(5) + "  minutes for break",
                                           True, (255, 255, 255))
             self.surface.blit(limitedBreak, (350, 200))
             self.mush.drawMage()
         else:
             myfont1 = pygame.font.SysFont("Broadway", 28)
 
-            limitedBreak = myfont1.render("You have  " + str(score) + "  mushroom many times for break",
+            limitedBreak = myfont1.render("You have  " + str(score-1) + "  mushroom many times for break",
                                           True, (255, 255, 255))
             self.surface.blit(limitedBreak, (350, 200))
             self.mush.drawMage()
