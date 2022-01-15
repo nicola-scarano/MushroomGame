@@ -4,8 +4,7 @@
 
 <img src="resources/blueMush.jpg" ></img> <img src="resources/redMush.jpg" ></img> <img src="resources/purpleMush.jpg" ></img> 
 
-Mush is a game that analyzes environmental volume: If environment is not very loudy ( if it does not exeeds the treshold valume value ) mushrooms are growing during the session.
-
+classroom analytics collaborative game that encourages positive behaviour. Simply, Mush is a game that analyses environmental volume: If environment is not very loud (if it does not exceed the threshold volume value) mushrooms are growing during the session. 
 <img src="resources/4.png" ></img>
 
 This concept is adapted into a classroom environment. If a group of students are not very laudy during the class session mushrooms grow. 
