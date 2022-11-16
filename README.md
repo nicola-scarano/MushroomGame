@@ -15,7 +15,13 @@ Students are awarded with breaktimes: students can take a break as long as the a
 For volume measurement rcaudio (https://github.com/mhy12345/rcaudio) is used.
 
 For game part pygame library is used.
-  
+
+Video demo: https://www.youtube.com/watch?v=-tU486wmFCQ
+Pitch deck: https://drive.google.com/file/d/1qrs0zKHYRMa4EONPlU3myVQDSxf0KFIS/view?usp=sharing
+
+
+
+<!-- 
 ##  Game object's definition 
 
 ### Mushrooms
@@ -33,6 +39,5 @@ Mushrooms are grown since the measured total volume during a session is not exce
 Mage comes at the end of the all sessions and she announces the awarded breaktime that change according to the numer of mushrooms grew.
 <p align="center">
 <img src="resources/2.png" width=50%>
-</p>
+</p> -->
 
-https://www.youtube.com/watch?v=-tU486wmFCQ
