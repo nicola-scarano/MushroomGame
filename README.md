@@ -17,6 +17,7 @@ For volume measurement rcaudio (https://github.com/mhy12345/rcaudio) is used.
 For game part pygame library is used.
 
 Video demo: https://www.youtube.com/watch?v=-tU486wmFCQ
+
 Pitch deck: https://drive.google.com/file/d/1qrs0zKHYRMa4EONPlU3myVQDSxf0KFIS/view?usp=sharing
 
 
